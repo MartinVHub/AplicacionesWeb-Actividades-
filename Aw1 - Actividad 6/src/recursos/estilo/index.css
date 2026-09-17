@@ -1,0 +1,115 @@
+/*
+Sintaxis
+*/
+
+/*regla de estilo (rule) */
+/*
+selector {
+    propiedad1: valor;
+    propiedad2: valor;
+}
+*/
+
+/*IMPORTAR FUENTE*/
+@font-face {
+    font-family: Poppins;
+    src: url(fuentes/Poppins-Regular.ttf);
+}
+
+
+/*SELECTOR UNIVERAL */
+
+*{
+    /*outline: 1px red solid; */
+}
+
+
+/* Selectores de TIPO */
+
+html {
+    font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+}
+
+a {
+    color: #333333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Selectores de CLASE */
+/*.vinculos{
+    color: #ffffff;
+}*/
+
+
+/* CONTENIDO PRINCIPAL */
+
+.encabezado-principal {
+    padding: 10px 20px;
+    background-color: #9e9e9e;
+    border-bottom: 2px solid #000000;
+}
+
+
+.contenido-principal {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+
+.pie-principal {
+    background-color: #9e9e9e;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/*ATRIBUTO */
+[href]{
+
+}
+
+/*
+   ENCABEZADO Y NAVEGACIÓN (Nuevos Colores)
+  
+*/
+
+.encabezado-principal {
+    padding: 10px 20px;
+    background-color: #1b365d; 
+    border-bottom: 3px solid #2e6b9e; 
+}
+
+
+.encabezado-principal nav {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #14284b;
+    background-color: #2e6b9e; 
+    margin-top: 10px;
+    border-radius: 4px;
+}
+
+
+.encabezado-principal nav a {
+    color: #ffffff; 
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+
+.encabezado-principal nav a:hover {
+    color: #ffd166; 
+}

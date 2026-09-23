@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Mariana López</title>
+    <link rel="stylesheet" href="./recursos/estilos/index.css">
+</head>
+<body>
+    <header class="cabecera-principal">
+        <a href="./index.html" aria-label="Ir al Inicio">
+            <img src="./recursos/imagenes/pexels-markus-winkler-1430818-30945515.jpg" alt="logo Mariana López">
+        </a>
+        <nav>
+            <a href="./index.html">
+                Quién soy / Servicios
+            </a>
+            <a href="./contacto.html">
+                Contacto
+            </a>
+        </nav>
+    </header>
+    <main class ="contenido-principal">
+        <h1>Contacto</h1>
+        <p>Comencemos a trabajar juntos. Por favor, completa el siguiente formulario con tus datos de contacto y la información de tu empresa. Detalla brevemente cuál es tu desafío actual y te responderé a la brevedad para coordinar una reunión de evaluación preliminar.</p>
+        
+        <form action="" method="POST">
+            <div>
+                <label for="nombre">Nombre completo del contacto:</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="empresa">Nombre de la empresa:</label><br>
+                <input type="text" id="empresa" name="empresa" required>
+            </div>
+            <br>
+            <div>
+                <label for="rubro">Rubro o sector industrial:</label><br>
+                <select id="rubro" name="rubro" required>
+                    <option value="">Seleccione una opción...</option>
+                    <option value="industria">Industria</option>
+                    <option value="comercio">Comercio</option>
+                    <option value="logistica">Logística</option>
+                    <option value="servicios">Servicios</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="motivo">Motivo de la consulta o necesidad principal:</label><br>
+                <textarea id="motivo" name="motivo" rows="5" cols="40" required></textarea>
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Enviar consulta">
+            </div>
+        </form>
+    </main>
+    <footer class="pie-principal">
+        <ul>
+            <li>
+                <a href="https://instagram.com/@MarianaSustentable" target="_blank" >
+                    @MarianaSustentable
+                </a>
+            </li>
+            <li>
+                Bv. San Juan 200 - Bº Nueva Cordoba 
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

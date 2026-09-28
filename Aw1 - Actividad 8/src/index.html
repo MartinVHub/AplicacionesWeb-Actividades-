@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Cabañas ecológicas</title>
+    <link rel="stylesheet" href="./recursos/css/index.css">
+</head>
+
+<body>
+    <!-- Se utiliza <header> en lugar de un <div> genérico para definir la cabecera principal del sitio web -->
+    <header class="header-principal">
+        <div class="contenedor-logo">
+            <a href="./index.html">
+                <img src="./recursos/imagenes/logo-rs.svg"
+                    alt="Logotipo de Retiro Sustentable - Volver a la página principal" class="logo">
+            </a>
+        </div>    
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="./reservas.html">Reservas</a></li>
+                </ul>
+            </nav>
+    </header>
+    <!-- Se utiliza <main> para agrupar el contenido único y principal de esta página -->
+
+    <main class="contenido-principal">
+        <section class="hero">
+            <h1>Cabañas para Alquiler</h1>
+            <p>Retiro Sustentable en las sierras de San Javier, Traslasierras, Córdoba.</p>
+        </section>
+        <section class="catalogo">
+            <h2>Catálogo de Cabañas</h2>
+
+            <!--  Se usa <article> para cada cabaña -->
+
+            <!-- Cabaña 1 -->
+            <article class="cabaña-card">
+                <img src="./recursos/imagenes/modelo1.jpg"
+                    alt="Fotografía de Cabaña El Chañar rodeada de naturaleza al pie de la montaña">
+                <h3>Cabaña El Chañar</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cabaña acogedora ideal para parejas que
+                    buscan tranquilidad.</p>
+                <span class="precio">$45.000 / día</span>
+
+                <!-- : Cada cabaña posee un enlace directo para iniciar la reserva en la página correspondiente -->
+                <a href="./reservas.html" class="btn-reserva">Reservar Cabaña</a>
+            </article>
+
+            <!-- Cabaña 2 -->
+            <article class="cabaña-card">
+                <img src="./recursos/imagenes/modelo2.jpg"
+                    alt="Fotografía de Cabaña El Algarrobo con terraza sustentable">
+                <h3>Cabaña El Algarrobo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amplia distribución pensada para el confort
+                    familiar.</p>
+                <span class="precio">$55.000 / día</span>
+                <a href="./reservas.html" class="btn-reserva">Reservar Cabaña</a>
+            </article>
+
+            <!-- Cabaña 3 -->
+            <article class="cabana-card">
+                <img src="./recursos/imagenes/modelo3.jpg"
+                    alt="Fotografía de Cabaña Los Quebrachos de dos plantas con vista a las sierras">
+                <h3>Cabaña Los Quebrachos</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vista panorámica a las sierras y
+                    equipamiento completo.</p>
+                <span class="precio">$60.000 / día</span>
+                <a href="./reservas.html" class="btn-reserva">Reservar Cabaña</a>
+            </article>
+
+            <!-- Cabaña 4 -->
+            <article class="cabaña-card">
+                <img src="./recursos/imagenes/modelo4.jpg"
+                    alt="Fotografía de Cabaña El Molle de dos plantas iluminada al atardecer">
+                <h3>Cabaña El Molle</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Construcción ecológica integrada con el
+                    entorno natural.</p>
+                <span class="precio">$50.000 / día</span>
+                <a href="./reservas.html" class="btn-reserva">Reservar Cabaña</a>
+            </article>
+        </section>
+    </main>
+    <footer class="footer-principal">
+        <p> 2026 Retiro Sustentable - Estudio Copan Arquitectura. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Reservas</title>
+    <link rel="stylesheet" href="./recursos/css/index.css">
+</head>
+
+<body>
+    <!-- Se utiliza <header> en lugar de un <div> genérico para definir la cabecera principal del sitio web -->
+    <header class="header-principal">
+        <div class="contenedor-logo">
+            <a href="./index.html">
+                <img src="./recursos/imagenes/logo-rs.svg"
+                    alt="Logotipo de Retiro Sustentable - Volver a la página principal" class="logo">
+            </a>
+        </div>
+        <nav class="menu-navegacion">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <section class="seccion-reserva">
+            <h1>Formulario de Reserva</h1>
+            <p>Complete los siguientes datos para consultar disponibilidad y realizar su reserva.</p>
+
+            <!-- Atributos 'action' y 'method' definidos para los datos ingresados -->
+            <form action="#" method="POST" class="formulario-reserva">
+
+                <!--Cada campo de entrada (<input>) está enlazado directamente a su etiqueta (<label>) mediante los atributos 'for' e 'id' correspondientes -->
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre de la persona que consulta:</label>
+                    <input type="text" id="nombre" name="nombre_consulta" placeholder="Ingrese su nombre completo"
+                        required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej: 3511234567" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="fecha-desde">Fecha desde:</label>
+                    <input type="date" id="fecha-desde" name="fecha_desde" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="fecha-hasta">Fecha hasta:</label>
+                    <input type="date" id="fecha-hasta" name="fecha_hasta" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario" rows="4"
+                        placeholder="Escriba aquí sus dudas o la cabaña de su preferencia..."></textarea>
+                </div>
+
+                <button type="submit" class="boton-enviar">Enviar Consulta</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer-principal">
+        <p>&copy; 2026 Retiro Sustentable - Estudio Copan Arquitectura. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
